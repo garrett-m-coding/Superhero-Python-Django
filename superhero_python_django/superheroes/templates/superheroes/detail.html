@@ -8,5 +8,15 @@
 </head>
 <body>
     <h1>Superhero Details:</h1>
+    <ul>
+        {% for hero in all_heroes %}
+        <li> <p> {{hero.name}}<br /> 
+            {{hero.alter_ego}}<br />
+            {{hero.primary_ability}}<br />
+            {{hero.secondary_ability}}<br />
+            {{hero.catchphrase}}<br />
+        </p> </li>
+        {% endfor %}
+    </ul>
 </body>
 </html>
